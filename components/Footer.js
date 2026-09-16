@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
+import { ArrowUpRight, Mail, MessageCircle, Phone } from "lucide-react";
 import { site, subjects } from "@/lib/site-data";
 
 export default function Footer() {
@@ -56,6 +56,10 @@ export default function Footer() {
             </a>
             <a href={`https://wa.me/${site.whatsapp}`}>
               <MessageCircle size={15} />
+              {site.whatsapp}
+            </a>
+            <a href={`tel:${site.phone.replace(/\D/g, "")}`}>
+              <Phone size={15} />
               {site.phone}
             </a>
             <Link href="/faq">
