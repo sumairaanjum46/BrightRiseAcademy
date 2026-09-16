@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <Link href="/" className="brand">
-              <Image src="/logo-icon.png" width={38} height={38} alt="" />
+              <Image src="/logo-icon.png" width={38} height={38} alt="" title="BrightRise Academy logo" />
               <span>BrightRise <span>Academy</span></span>
             </Link>
             <p className="footer-description">

@@ -18,7 +18,7 @@ export default function Navbar() {
     <div className="announcement"><span>A little support. A brighter future.</span><Link href="/book-a-free-trial">Try your first session free <ArrowUpRight size={13} /></Link></div>
     <header className="site-header">
       <div className="container-page header-inner">
-        <Link href="/" className="brand" aria-label="BrightRise Academy home"><Image src="/logo-icon.png" width={38} height={38} alt="" /><span>BrightRise <span>Academy</span></span></Link>
+        <Link href="/" className="brand" aria-label="BrightRise Academy home"><Image src="/logo-icon.png" width={38} height={38} alt="" title="BrightRise Academy logo" /><span>BrightRise <span>Academy</span></span></Link>
         <nav aria-label="Main navigation" className="desktop-nav">{links.map(([href, label]) => <Link key={href} href={href} aria-current={pathname === href ? "page" : undefined}>{label}</Link>)}</nav>
         <Link href="/book-a-free-trial" className="button button-dark header-cta">Book a free trial <ArrowUpRight size={17} /></Link>
         <button className="mobile-menu-toggle" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</button>

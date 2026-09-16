@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="orbit-stamp" aria-hidden="true"><Sparkles size={26} /><span>ROOM TO<br />GROW</span></div>
         <div className="lesson-window">
           <div className="lesson-toolbar"><span><i /> A little curiosity goes a long way</span><span>1:1</span></div>
-          <div className="hero-photo"><Image src="/student-at-home.jpg" alt="A young student learning at home with a tutor on a video call" fill priority sizes="(max-width: 767px) 90vw, (max-width: 1100px) 50vw, 540px" /></div>
+          <div className="hero-photo"><Image src="/student-at-home.jpg" alt="A young student learning at home with a tutor on a video call" title="A young student learning at home with a tutor on a video call" fill priority fetchPriority="high" sizes="(max-width: 767px) 90vw, (max-width: 1100px) 50vw, 540px" /></div>
           <div className="lesson-footer"><span><span className="status-dot" /> Learning, together.</span><div aria-hidden="true"><Mic size={14} /><Video size={15} /><Monitor size={15} /></div></div>
         </div>
         <div className="learning-note"><span className="note-icon"><Check size={20} /></span><div><strong>The best kind of progress?</strong><span>A little more confidence, every day.</span></div></div>

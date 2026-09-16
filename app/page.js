@@ -17,6 +17,25 @@ import { faqs } from "@/lib/site-data";
 export const metadata = pageMetadata(
   "/",
   "Online Tutoring for K–10 Students | Math, Science & More | BrightRise Academy",
-  "Personalized 1-on-1 online tutoring for K–10 students in the US. Math, Science, English, Social Studies and Coding. Book a free trial with BrightRise Academy."
+  "Personalized 1-on-1 online tutoring for K–10 students in the US. Math, Science, English, Social Studies and Coding. Book a free trial with BrightRise Academy.",
 );
-export default function HomePage() { return <><StructuredData data={faqSchema(faqs)} /><Hero /><StatsBar /><SubjectsGrid /><WhyUs /><VideoSection /><HowItWorks /><MentalMathChallenge /><GradeGrid /><Testimonials /><PricingSection id="pricing" /><FreeTrialSection id="book-free-trial" /><FAQ /><CTABand /></>; }
+export default function HomePage() {
+  return (
+    <>
+      <StructuredData data={faqSchema(faqs)} />
+      <Hero />
+      <StatsBar />
+      <SubjectsGrid />
+      <WhyUs />
+      <VideoSection />
+      <HowItWorks />
+      <MentalMathChallenge />
+      <GradeGrid />
+      <Testimonials />
+      <PricingSection id="pricing" />
+      <FreeTrialSection id="book-free-trial" />
+      <FAQ />
+      <CTABand />
+    </>
+  );
+}

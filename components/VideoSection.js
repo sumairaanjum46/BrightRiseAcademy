@@ -47,7 +47,7 @@ export default function VideoSection() {
             <Reveal key={title} delay={index * 80} direction={index === 0 ? "left" : index === 2 ? "right" : "up"}>
               <article className="video-story-card">
                 <div className="video-story-image">
-                  <Image src={image} alt="" fill sizes="(max-width: 767px) 90vw, 33vw" />
+                  <Image src={image} alt={title} title={title} fill sizes="(max-width: 767px) 45vw, (max-width: 1100px) 31vw, (max-width: 1280px) 30vw, 384px" />
                   <span className="video-label"><i />{label}</span>
                   <span className="video-play" aria-hidden="true"><Play size={18} fill="currentColor" /></span>
                 </div>
